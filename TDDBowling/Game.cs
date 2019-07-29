@@ -9,8 +9,8 @@ namespace TDDBowling
         public const int MaxPlayer = 8;
 
         public List<Player> players;
-        
-        public Game()
+
+		public Game()
         {
             players = new List<Player>();
         }
