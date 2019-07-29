@@ -1,11 +1,11 @@
 ﻿namespace TDDBowling
 {
-    public class Player
-    {
-        private  const int MaxShoot = 2;
-        private int shoot = MaxShoot;
+	public class Player
+	{
+		private const int MaxShoot = 2;
+		private int shoot = MaxShoot;
 
-        public void Shoot()
+        public void Rolls()
         {
             if (shoot <= 0)
                 throw new MaxTwoShootsException();
@@ -13,9 +13,9 @@
             shoot--;
         }
 
-        public void ResetShoot()
+        public void ResetRolls()
         {
             shoot = MaxShoot;
         }
-    }
+	}
 }
